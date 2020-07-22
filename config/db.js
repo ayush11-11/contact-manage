@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+process.env.SUPPRESS_NO_CONFIG_WARNING = 'y';
 const config = require('config');
 const db = config.get('mongoURI');
 
